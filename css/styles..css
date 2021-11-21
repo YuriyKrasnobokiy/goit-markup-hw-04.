@@ -465,9 +465,11 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.footer-container {
+  display: flex;
+}
+
 .footer-address {
-  display: block;
-  margin: 0;
 }
 
 .footer-logo-link {
@@ -526,7 +528,6 @@ body {
   align-items: center;
   margin-top: 12px;
   margin-left: 70px;
-  margin-bottom: 40px;
 }
 
 .footer-social-title {

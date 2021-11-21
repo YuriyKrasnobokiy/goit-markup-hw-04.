@@ -191,7 +191,6 @@ body {
   margin-left: auto;
   display: flex;
   align-items: center;
-
   justify-content: center;
 }
 
@@ -207,8 +206,14 @@ body {
   color: var(--contact-link-color);
   padding-top: 32px;
   padding-bottom: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  text-align: center;
+.contacts-social-icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /* HERO */

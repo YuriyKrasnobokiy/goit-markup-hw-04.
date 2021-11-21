@@ -22,8 +22,10 @@
 
   --team-bg-color: #f5f4fa;
   --team-card-background: #ffffff;
+  --team-social-link-bg-color: #ffffff;
 
   --clients-list-link-border: #afb1b8;
+  --team-social-icon-color: #afb1b8;
 
   --footer-bg-color: #2f303a;
   --footer-address-text: #ffffff;
@@ -420,8 +422,24 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  display: block;
-  background-color: teal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--team-social-link-bg-color);
+}
+
+.team-social-icon {
+  fill: var(--team-social-icon-color);
+}
+
+.team-social-link:hover,
+.team-social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.team-social-link:hover .team-social-icon,
+.team-social-link:focus .team-social-icon {
+  fill: var(--accent-text-color);
 }
 
 /* CLIENTS */

@@ -471,6 +471,7 @@ body {
 .clients-list {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .clients-list-item {
   width: 170px;
@@ -685,14 +686,14 @@ body {
   margin-bottom: 30px;
 }
 
-.examples-list-item:focus,
-.examples-list-item:hover {
-  cursor: pointer;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+.examples-list-link {
+  display: block;
 }
 
-.card-thumb {
+.examples-list-link:focus,
+.examples-list-link:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .card-content {
@@ -711,6 +712,7 @@ body {
 }
 
 .examples-item-text {
+  color: var(--body-color);
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
